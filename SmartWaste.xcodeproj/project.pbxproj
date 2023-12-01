@@ -34,6 +34,7 @@
 		27B10B912B0B0AD100403F01 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 27B10B902B0B0AD100403F01 /* FirebaseFirestoreSwift */; };
 		27B10B932B0B0AD100403F01 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 27B10B922B0B0AD100403F01 /* FirebaseStorage */; };
 		27B10B952B0B0AD100403F01 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 27B10B942B0B0AD100403F01 /* FirebaseStorageCombine-Community */; };
+		27B10B992B195DF000403F01 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B10B982B195DF000403F01 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		27B10B022B0AF68D00403F01 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		27B10B042B0B06F200403F01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		27B10B3F2B0B085000403F01 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		27B10B982B195DF000403F01 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		27B10AED2B0ABE4A00403F01 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				27B10B972B195DDD00403F01 /* Home */,
 				27B10AF02B0ABEA000403F01 /* Authentication */,
 				27B10AF12B0ABEA800403F01 /* Profile */,
 				27B10AF22B0ABEAD00403F01 /* Root */,
@@ -192,6 +195,14 @@
 				27B10B3F2B0B085000403F01 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		27B10B972B195DDD00403F01 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				27B10B982B195DF000403F01 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				27B10AF52B0ABF7F00403F01 /* LoginView.swift in Sources */,
 				27B10AF92B0AC72000403F01 /* InputView.swift in Sources */,
 				27B10AE12B0ABDD100403F01 /* ContentView.swift in Sources */,
+				27B10B992B195DF000403F01 /* HomeView.swift in Sources */,
 				27B10B012B0AE89200403F01 /* SettingsRowView.swift in Sources */,
 				27B10B032B0AF68D00403F01 /* User.swift in Sources */,
 				27B10ADF2B0ABDD100403F01 /* SmartWasteApp.swift in Sources */,

@@ -39,6 +39,8 @@ struct LoginView: View {
                         InputView(text: self.$password,
                                   placeholder: "Password",
                                   isSecureField: true)
+                        
+                        // Sign in button
                         Button {
                             Task {
                                 try await viewModel.signIn(withEmail: email, password: password)
@@ -48,6 +50,8 @@ struct LoginView: View {
                             .foregroundColor(.white)
                             .frame(width: 300, height: 50)
                             .background(.blue)
+                            .disabled(!formIsValid)
+                            .opacity(formIsValid ? 1.0: 0.5)
                             .cornerRadius(10)
                             
                         }
@@ -74,7 +78,17 @@ struct LoginView: View {
     }
 }
 
-
+// validation checks
+extension LoginView: AuthenticationFormProtocol {
+    
+    var formIsValid: Bool {
+        return !email.isEmpty 
+        && email.contains("@")
+        && !password.isEmpty
+        && password.count > 6
+        
+    }
+}
 
 #Preview {
     LoginView()
